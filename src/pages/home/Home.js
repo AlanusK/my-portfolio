@@ -27,7 +27,7 @@ export const Home = () => {
                 <p className='text-4xl font-bold text-justify'>
                     I help clients to build web and mobile apps for their businesses.
                     <span className='text-lg'>
-                        <Link to='/about' className='text-primary-default'><AiOutlineLink style={{ marginLeft: 5, marginRight: 5, display: 'inline' }} />View skills.</Link>
+                        <Link to='/skills' className='text-primary-default'><AiOutlineLink style={{ marginLeft: 5, marginRight: 5, display: 'inline' }} />View skills.</Link>
                     </span>
                 </p>
             </div>
