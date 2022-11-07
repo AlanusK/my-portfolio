@@ -2,19 +2,24 @@
 import React from 'react';
 import logo from '../../resources/images/logo.png';
 import { Link, NavLink } from 'react-router-dom';
+import { BiMenu } from 'react-icons/bi';
 
 export const Header = () => {
     return (
         <div className='h-20 flex items-center justify-between'>
-            <Link to='/'>
-                <img src={logo} width='50px' alt='logo' />
-            </Link>
+            <div>
+                <Link to='/'><img src={logo} width='50px' alt='logo' /></Link>
+            </div>
 
-            <nav className='w-96'>
+            <div className='md:hidden'>
+                <button className='bg-primary-default rounded-full p-1'><BiMenu size={40}/></button>
+            </div>
+
+            <nav className='w-96 hidden md:inline'>
                 <ul className='flex items-center justify-between font-bold text-xl'>
                     <li>
                         <NavLink
-                            to='/' 
+                            to='/'
                             end
                             style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
                         >
