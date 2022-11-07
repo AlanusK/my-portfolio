@@ -1,14 +1,19 @@
-import { Header } from './components/header';
-import Main from './Main';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header } from "./components/header/Header";
+import { Home } from "./pages/home";
 
 export default function App() {
   return (
-    <section className='h-full flex flex-col'>
-      <Header />
-      <div className='flex-grow'>
-        <Main />
-      </div>
-      {/* <Footer /> */}
-    </section>
+    <div className='h-full flex flex-col'>
+      <Router>
+        <Header />
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </main>
+        {/* <Footer /> */}
+      </Router>
+    </div>
   )
 }
