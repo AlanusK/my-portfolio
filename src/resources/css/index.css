@@ -1,0 +1,92 @@
+html {
+    background-color: beige;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 3rem;
+    background-color: #1c1c1c;
+    font-size: 20;
+}
+
+header {
+    /* background-color: beige; */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navigation {
+    /* background-color: blue; */
+    width: 40%;
+}
+
+.navigation-list {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.navigation li {
+    display: inline-flex;
+    font-size: large;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 50px; */
+}
+
+.about-section {
+    display: flex;
+    text-align: justify;
+}
+
+.project-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #ff5403;
+    color: white;
+
+}
+.intro {
+    /* display: flex;
+    flex-direction: column; */
+    width: 50%;
+}
+
+.intro span {
+    color: #ff5403;
+}
+
+.intro-title {
+    color: #84a1ff;
+}
+
+.profile-picture {
+    width: 40%;
+}
+
+.link {
+    color: #ff5403;
+    font-size: large;
+}
+
+.outline-link {
+    position: relative;
+    top: 5px;
+}
