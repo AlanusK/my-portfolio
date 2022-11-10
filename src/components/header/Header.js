@@ -1,10 +1,12 @@
 // dependencies
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../resources/images/logo.png';
 import { Link, NavLink } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
+import { Modal } from '../modal';
 
 export const Header = () => {
+    const [showModal, setShowModal ] = useState(true);
     return (
         <div className='h-20 flex items-center justify-between'>
             <div>
@@ -28,7 +30,7 @@ export const Header = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='/project'
+                            to='/projects'
                             style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
                         >
                             Projects
@@ -60,6 +62,8 @@ export const Header = () => {
                     </li>
                 </ul>
             </nav>
+
+            {showModal && <Modal /> }
         </div>
     )
 }
