@@ -1,12 +1,13 @@
 // dependencies
 import React, { useState } from 'react';
 import logo from '../../resources/images/logo.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
 import { Modal } from '../modal';
+import { NavList } from '../nav-list';
 
 export const Header = () => {
-    const [showModal, setShowModal ] = useState(true);
+    const [showModal, setShowModal] = useState(true);
     return (
         <div className='h-20 flex items-center justify-between'>
             <div>
@@ -19,51 +20,11 @@ export const Header = () => {
 
             <nav className='w-96 hidden md:inline'>
                 <ul className='flex items-center justify-between font-bold text-xl'>
-                    <li>
-                        <NavLink
-                            to='/'
-                            end
-                            style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
-                        >
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to='/projects'
-                            style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
-                        >
-                            Projects
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to='/skills'
-                            style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
-                        >
-                            Skills
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to='/about'
-                            style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
-                        >
-                            About Me
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to='/contact'
-                            style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
-                        >
-                            Contact
-                        </NavLink>
-                    </li>
+                    <NavList /> 
                 </ul>
             </nav>
 
-            {showModal && <Modal /> }
+            {showModal && <Modal setShowModal={setShowModal} /> }
         </div>
     )
 }
