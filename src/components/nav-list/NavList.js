@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 
-export const NavList = () => (
+export const NavList = ({setShowModal}) => (
     <>
         <li>
             <NavLink
                 to='/'
                 end
                 style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                onClick={() => setShowModal(false)}
             >
                 Home
             </NavLink>
@@ -15,6 +16,7 @@ export const NavList = () => (
             <NavLink
                 to='/projects'
                 style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                onClick={() => setShowModal(false)}
             >
                 Projects
             </NavLink>
@@ -23,6 +25,7 @@ export const NavList = () => (
             <NavLink
                 to='/skills'
                 style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                onClick={() => setShowModal(false)}
             >
                 Skills
             </NavLink>
@@ -31,6 +34,7 @@ export const NavList = () => (
             <NavLink
                 to='/about'
                 style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                onClick={() => setShowModal(false)}
             >
                 About Me
             </NavLink>
@@ -39,6 +43,7 @@ export const NavList = () => (
             <NavLink
                 to='/contact'
                 style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                onClick={() => setShowModal(false)}
             >
                 Contact
             </NavLink>
