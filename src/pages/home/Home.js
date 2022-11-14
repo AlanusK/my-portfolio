@@ -2,6 +2,7 @@ import React from 'react';
 import profile from '../../resources/images/profile.png';
 import { AiOutlineLink } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { ProjectCard } from '../../components/project-card';
 
 
 export const Home = () => {
@@ -33,6 +34,37 @@ export const Home = () => {
                     </span>
                 </p>
             </div>
+
+            <div className=''>
+                <div className='my-6 flex justify-between items-center'>
+                    <h2 className='text-secondary-default'>Recent Projects</h2>
+                    <button className='bg-primary-default rounded-lg p-2' onClick={() => { }}>
+                        View More
+                    </button>
+                </div>
+
+                <div className='md:flex md:flex-wrap md:justify-between'>
+                    <ProjectCard
+                        title='Noteworthy technology acquisitions 2021'
+                        description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                    />
+
+                    {/* This div is for providing center spacing on medium screens and above*/}
+                    <div className='hidden my-6 md:mt-0 md:flex md:w-6' />
+
+                    <ProjectCard
+                        title='Noteworthy technology acquisitions 2021'
+                        description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                    />
+
+                    <ProjectCard
+                        title='Noteworthy technology acquisitions 2021'
+                        description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                    />
+                </div>
+            </div>
+
+
         </div>
     )
 }
