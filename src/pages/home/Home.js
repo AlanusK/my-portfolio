@@ -7,7 +7,6 @@ import { AiOutlineLink } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { ProjectCard } from '../../components/project-card';
 
-
 export const Home = () => {
     return (
         <div className=''>
@@ -52,9 +51,8 @@ export const Home = () => {
                         title='Zmstore'
                         description='Cross-platform mobile selling app'
                         skills={
-                            <ul className='flex'>
+                            <ul className='text-white-dark text-base font-thin xs:flex'>
                                 <li className='mr-3'>react native</li>
-                                <li className='mr-3'>typescript</li>
                                 <li className='mr-3'>typescript</li>
                             </ul>
                         }
@@ -68,7 +66,7 @@ export const Home = () => {
                         title='DEMO Streaming'
                         description='A web app that shows popular series and movies'
                         skills={
-                            <ul className='flex'>
+                            <ul className='text-white-dark text-base font-thin xs:flex'>
                                 <li className='mr-3'>react</li>
                                 <li className='mr-3'>tailwindcss</li>
                             </ul>
@@ -86,9 +84,8 @@ export const Home = () => {
                         title='Sender Dashboard'
                         description='E-commerce platform focus on simplifying business payments'
                         skills={
-                            <ul className='flex'>
+                            <ul className='text-white-dark text-base font-thin xs:flex'>
                                 <li className='mr-3'>react</li>
-                                <li className='mr-3'>typescript</li>
                                 <li className='mr-3'>typescript</li>
                             </ul>
                         }
