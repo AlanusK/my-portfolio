@@ -1,6 +1,5 @@
 // import React from 'react';
 import { NavList } from '../nav-list';
-import './Modal.css';
 
 export const Modal = (props) => {
     return (
