@@ -1,5 +1,8 @@
 import React from 'react';
 import profile from '../../resources/images/profile.png';
+import clickpesa from '../../resources/images/clickpesa.png';
+import streaming from '../../resources/images/streaming.png';
+import zmstore from '../../resources/images/zmstore.png';
 import { AiOutlineLink } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { ProjectCard } from '../../components/project-card';
@@ -45,26 +48,53 @@ export const Home = () => {
 
                 <div className='md:flex md:flex-wrap md:justify-between'>
                     <ProjectCard
-                        title='Noteworthy technology acquisitions 2021'
-                        description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                        source={zmstore}
+                        title='Zmstore'
+                        description='Cross-platform mobile selling app'
+                        skills={
+                            <ul className='flex'>
+                                <li className='mr-3'>react native</li>
+                                <li className='mr-3'>typescript</li>
+                                <li className='mr-3'>typescript</li>
+                            </ul>
+                        }
                     />
 
                     {/* This div is for providing center spacing on medium screens and above*/}
                     <div className='hidden my-6 md:mt-0 md:flex md:w-6' />
 
                     <ProjectCard
-                        title='Noteworthy technology acquisitions 2021'
-                        description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                        source={streaming}
+                        title='DEMO Streaming'
+                        description='A web app that shows popular series and movies'
+                        skills={
+                            <ul className='flex'>
+                                <li className='mr-3'>react</li>
+                                <li className='mr-3'>tailwindcss</li>
+                            </ul>
+                        }
                     />
 
-                    <ProjectCard
+                    {/* <ProjectCard
+                        source={image1}
                         title='Noteworthy technology acquisitions 2021'
                         description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                    /> */}
+
+                    <ProjectCard
+                        source={clickpesa}
+                        title='Sender Dashboard'
+                        description='E-commerce platform focus on simplifying business payments'
+                        skills={
+                            <ul className='flex'>
+                                <li className='mr-3'>react</li>
+                                <li className='mr-3'>typescript</li>
+                                <li className='mr-3'>typescript</li>
+                            </ul>
+                        }
                     />
                 </div>
             </div>
-
-
         </div>
     )
 }
