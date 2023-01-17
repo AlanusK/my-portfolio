@@ -7,10 +7,10 @@ import { Contact } from "./pages/contact";
 
 export default function App() {
   return (
-    <div className='h-full flex flex-col'>
+    <div className='h-full flex flex-col relative min-h-screen'>
       <Router>
         <Header />
-        <main>
+        <main className='pb-20'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/projects' element={<Projects />} />
