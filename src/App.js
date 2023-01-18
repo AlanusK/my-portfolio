@@ -10,7 +10,7 @@ export default function App() {
     <div className='h-full flex flex-col relative min-h-screen'>
       <Router>
         <Header />
-        <main className='pb-20'>
+        <main className='flex grow pb-20'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/projects' element={<Projects />} />

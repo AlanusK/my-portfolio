@@ -19,14 +19,14 @@ export const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col bg-secondary-dark -mx-12 px-12 py-6'>
+        <div className='flex flex-col grow bg-secondary-dark -mx-12 px-12 py-6'>
             <div className=''>
                 <h5>Have an interesting project? I would love to hear about it.</h5>
                 <h1 className='mt-4 mb-2'>Let's Connect! ✉️</h1>
                 <p>If you ever want a quick chat - you can find me on social media or you can just send me a message here!</p>
             </div>
 
-            <div className='flex items-center justify-around my-2'>
+            <div className='flex items-center justify-around my-4'>
                 <h2><a href='https://www.linkedin.com/in/alanus-kajara-7a5bb032'><FaLinkedin /></a></h2>
                 <h2><a href='https://twitter.com/AlanKajara'><FaTwitter /></a></h2>
                 <h2><a href='https://github.com/alanusk'><FaGithub /></a></h2>
