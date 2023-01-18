@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 
 export const Contact = () => {
     const form = useRef();
@@ -18,53 +19,30 @@ export const Contact = () => {
     };
 
     return (
-        <div>
-            <div>
-
-                <h2>Let's Connect! 💌</h2>
-                <p>
-                    If you ever want to grab a coffee/bubble tea <span>(virtually)</span> or just want
-                    a
-                    quick
-                    chat - you can find me on social media or you can send me a message here!
-                </p>
-                <ul>
-                    <li>
-                        <a href='https://www.linkedin.com/in/sharon-yi/'><i aria-hidden='true'></i></a>
-                    </li>
-                    <li>
-                        <a href='https://twitter.com/sharon_yi'><i aria-hidden='true'></i></a>
-                    </li>
-                    <li>
-                        <a href='https://github.com/sharon-yi'><i aria-hidden='true'></i></a>
-                    </li>
-                </ul>
+        <div className='flex flex-col bg-secondary-dark -mx-12 px-12 py-6'>
+            <div className=''>
+                <h5>Have an interesting project? I would love to hear about it.</h5>
+                <h1 className='mt-4 mb-2'>Let's Connect! ✉️</h1>
+                <p>If you ever want a quick chat - you can find me on social media or you can just send me a message here!</p>
             </div>
-            {/* <div classname='flex'>
-                <form action='thankyou/thanks' method='POST' name='contact'>
-                    <input type='hidden' name='form-name' value='contact' />
 
-                    <input type='text' name='name' id='name' placeholder='name' autocomplete='off' required='' />
+            <div className='flex items-center justify-around my-2'>
+                <h2><a href='https://www.linkedin.com/in/alanus-kajara-7a5bb032'><FaLinkedin /></a></h2>
+                <h2><a href='https://twitter.com/AlanKajara'><FaTwitter /></a></h2>
+                <h2><a href='https://github.com/alanusk'><FaGithub /></a></h2>
+            </div>
 
-                    <input type='email' name='email' id='email' placeholder='email' required='' />
-
-                    <textarea name='message' id='message' placeholder='message' required=''></textarea>
-                    <div classname=''>
-                        <button classname='' type='submit'>send message</button>
-                    </div>
-                </form>
-            </div> */}
-            <div>
-                <form ref={form} onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input className='bg-black-dark' type='text' name='name' />
-                    <label>Email</label>
-                    <input className='bg-black-darker' type='email' name='email' />
-                    <label>Message</label>
-                    <textarea className='bg-black-[#181818]' name='message' />
-                    <input type='submit' value='Send' />
+            <div className='my-2'>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
+                    {/* <label>Name</label> */}
+                    <input className='bg-[#1c1c1c] mb-4 px-4 py-3 focus:outline-none focus:border' type='text' name='name' id='name' placeholder='Name' required />
+                    {/* <label>Email</label> */}
+                    <input className='bg-[#1c1c1c] mb-4 px-4 py-3 focus:outline-none focus:border' type='email' name='email' id='email' placeholder='Email' required />
+                    {/* <label>Message</label> */}
+                    <textarea className='bg-[#1c1c1c] mb-4 px-4 py-3 focus:outline-none focus:border' name='message' id='message' placeholder='Message' required />
+                    <input className='bg-primary-default rounded-lg p-2 w-36' type='submit' value='SEND MESSAGE' />
                 </form>
             </div>
         </div>
-                        )
+    )
 }
