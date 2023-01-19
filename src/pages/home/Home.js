@@ -40,7 +40,7 @@ export const Home = () => {
             <div className=''>
                 <div className='my-6 flex justify-between items-center'>
                     <h2 className='text-secondary-default'>Recent Projects</h2>
-                    <button className='bg-primary-default rounded-lg p-2' onClick={() => { }}>
+                    <button className='bg-primary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-dark duration-300' onClick={() => { }}>
                         View More
                     </button>
                 </div>

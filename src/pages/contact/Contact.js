@@ -44,7 +44,7 @@ export const Contact = () => {
                     <input className='bg-[#1c1c1c] mb-4 px-4 py-3 focus:outline-none focus:border' type='email' name='email' id='email' placeholder='Email' required />
                     {/* <label>Message</label> */}
                     <textarea className='bg-[#1c1c1c] mb-4 px-4 py-3 focus:outline-none focus:border h-40' name='message' id='message' placeholder='Message' required />
-                    <input className='bg-primary-default rounded-lg p-2 w-36' type='submit' value='SEND MESSAGE' />
+                    <input className='bg-primary-default rounded-lg p-2 w-36 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-dark duration-300' type='submit' value='SEND MESSAGE' />
                 </form>
             </div>
         </div>

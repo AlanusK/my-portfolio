@@ -23,6 +23,7 @@ module.exports = {
         default: '#fff',
       },
       primary: { 
+        dark: '#d9471c',
         default: '#ff5403',
       },
       secondary: {
