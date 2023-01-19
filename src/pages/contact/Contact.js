@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom';
 
 export const Contact = () => {
+    const navigate = useNavigate();
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -11,6 +14,7 @@ export const Contact = () => {
         emailjs.sendForm('service_k7livlk', 'template_zc2tb0b', form.current, 'ZHOXgvJFv8cbbEnJG')
             .then((result) => {
                 console.log(result.text);
+                navigate('/thanks')
             }, (error) => {
                 console.log(error.text);
             });

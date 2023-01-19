@@ -4,6 +4,7 @@ import { Footer } from "./components/footer/Footer";
 import { Home } from "./pages/home";
 import { Projects } from "./pages/projects";
 import { Contact } from "./pages/contact";
+import { Thanks } from "./pages/thanks";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route path='/' element={<Home />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/thanks' element={<Thanks />} />
           </Routes>
         </main>
         <Footer />
