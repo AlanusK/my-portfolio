@@ -14,7 +14,7 @@ export const Header = () => {
                 <Link to='/'><img src={logo} width='50px' alt='logo' /></Link>
             </div>
 
-            <div className='z-10 md:hidden'>
+            <div className='z-20 fixed right-12 top-4 md:hidden'>
                 {showModal === false ?
                     <button 
                         className='bg-primary-default rounded-full p-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' 
