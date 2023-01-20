@@ -18,7 +18,12 @@ export const Home = () => {
                     <p className='my-6 text-lg'>Telecommunications Engineer with a passion for technology.</p>
                     <div className='my-6 flex justify-center md:justify-start'>
                         <p className='flex items-center text-lg'>
-                            <Link to='/about' className='flex items-center text-primary-default'>Know more<AiOutlineLink style={{ marginLeft: 5, marginRight: 5 }} /></Link>
+                            <Link 
+                                to='/about' 
+                                className='flex items-center text-primary-default hover:text-primary-dark'
+                            >
+                                Know more<AiOutlineLink style={{ marginLeft: 5, marginRight: 5 }} />
+                            </Link>
                             about me
                         </p>
                     </div>
@@ -32,7 +37,12 @@ export const Home = () => {
                 <p className='text-4xl font-bold text-center md:text-justify'>
                     I help clients to build web and mobile apps for their businesses.
                     <span className='text-lg'>
-                        <Link to='/skills' className='text-primary-default block md:inline'><AiOutlineLink style={{ marginLeft: 5, marginRight: 5, display: 'inline' }} />View skills.</Link>
+                        <Link 
+                            to='/skills' 
+                            className='text-primary-default block md:inline hover:text-primary-dark'
+                        >
+                            <AiOutlineLink style={{ marginLeft: 5, marginRight: 5, display: 'inline' }} />View skills.
+                        </Link>
                     </span>
                 </p>
             </div>

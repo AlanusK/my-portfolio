@@ -6,8 +6,9 @@ export const NavList = ({setShowModal}) => (
             <NavLink
                 to='/'
                 end
-                style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                style={({ isActive }) => ({ color: isActive && '#ff5403' })}
                 onClick={() => setShowModal(false)}
+                className='hover:text-primary-default'
             >
                 Home
             </NavLink>
@@ -15,8 +16,9 @@ export const NavList = ({setShowModal}) => (
         <li>
             <NavLink
                 to='/projects'
-                style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                style={({ isActive }) => ({ color: isActive && '#ff5403' })}
                 onClick={() => setShowModal(false)}
+                className='hover:text-primary-default'
             >
                 Projects
             </NavLink>
@@ -24,8 +26,9 @@ export const NavList = ({setShowModal}) => (
         <li>
             <NavLink
                 to='/skills'
-                style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                style={({ isActive }) => ({ color: isActive && '#ff5403' })}
                 onClick={() => setShowModal(false)}
+                className='hover:text-primary-default'
             >
                 Skills
             </NavLink>
@@ -33,8 +36,9 @@ export const NavList = ({setShowModal}) => (
         <li>
             <NavLink
                 to='/about'
-                style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                style={({ isActive }) => ({ color: isActive && '#ff5403' })}
                 onClick={() => setShowModal(false)}
+                className='hover:text-primary-default'
             >
                 About Me
             </NavLink>
@@ -42,8 +46,9 @@ export const NavList = ({setShowModal}) => (
         <li>
             <NavLink
                 to='/contact'
-                style={({ isActive }) => ({ color: isActive ? '#ff5403' : '#fff' })}
+                style={({ isActive }) => ({ color: isActive && '#ff5403' })}
                 onClick={() => setShowModal(false)}
+                className='hover:text-primary-default'
             >
                 Contact
             </NavLink>
