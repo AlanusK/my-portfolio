@@ -16,11 +16,17 @@ export const Header = () => {
 
             <div className='z-10 md:hidden'>
                 {showModal === false ?
-                    <button className='bg-primary-default rounded-full p-1' onClick={() => setShowModal(true)}>
+                    <button 
+                        className='bg-primary-default rounded-full p-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' 
+                        onClick={() => setShowModal(true)}
+                    >
                         <BiMenu size={40} />
                     </button>
                     :
-                    <button className='bg-primary-default rounded-full p-1' onClick={() => setShowModal(false)}>
+                    <button 
+                        className='bg-primary-default rounded-full p-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' 
+                        onClick={() => setShowModal(false)}
+                    >
                         <BiX size={40} />
                     </button>
                 }
