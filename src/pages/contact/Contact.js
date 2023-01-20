@@ -36,9 +36,21 @@ export const Contact = () => {
                 <h1 className='mt-4 mb-2'>Let's Connect! ✉️</h1>
                 <p>If you ever want a quick chat - you can find me on social media or you can just send me a message here!</p>
                 <div className='flex items-center justify-around my-4'>
-                    <h2><a href='https://www.linkedin.com/in/alanus-kajara-7a5bb032'><FaLinkedin /></a></h2>
-                    <h2><a href='https://twitter.com/AlanKajara'><FaTwitter /></a></h2>
-                    <h2><a href='https://github.com/alanusk'><FaGithub /></a></h2>
+                    <h2>
+                        <a href='https://www.linkedin.com/in/alanus-kajara-7a5bb032'>
+                            <FaLinkedin className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'  />
+                        </a>
+                    </h2>
+                    <h2>
+                        <a href='https://twitter.com/AlanKajara'>
+                            <FaTwitter className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' />
+                        </a>
+                    </h2>
+                    <h2>
+                        <a href='https://github.com/alanusk'>
+                            <FaGithub className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' />
+                        </a>
+                    </h2>
                 </div>
             </div>
 

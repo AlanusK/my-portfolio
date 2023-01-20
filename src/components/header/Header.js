@@ -10,7 +10,7 @@ export const Header = () => {
     const [showModal, setShowModal] = useState(false);
     return (
         <div className='h-20 flex items-center justify-between'>
-            <div>
+            <div className='hover:animate-spin'>
                 <Link to='/'><img src={logo} width='50px' alt='logo' /></Link>
             </div>
 
