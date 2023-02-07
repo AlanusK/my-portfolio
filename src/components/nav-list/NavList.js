@@ -35,7 +35,7 @@ export const NavList = ({setShowModal}) => (
         </li>
         <li>
             <NavLink
-                to='/about'
+                to='/about-me'
                 style={({ isActive }) => ({ color: isActive && '#ff5403' })}
                 onClick={() => setShowModal(false)}
                 className='hover:text-primary-default'

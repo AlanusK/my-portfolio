@@ -19,7 +19,7 @@ export const Home = () => {
                     <div className='my-6 flex justify-center md:justify-start'>
                         <p className='flex items-center text-lg'>
                             <Link 
-                                to='/about' 
+                                to='/about-me' 
                                 className='flex items-center text-primary-default hover:text-primary-dark'
                             >
                                 Know more<AiOutlineLink style={{ marginLeft: 5, marginRight: 5 }} />
