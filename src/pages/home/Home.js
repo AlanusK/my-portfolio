@@ -15,7 +15,7 @@ export const Home = () => {
                     <h5 className='my-6' >Hey!</h5>
                     <h1 className='my-6'>I'm <span className='text-primary-default'>Alanus Kajara</span></h1>
                     <h2 className='my-6 text-secondary-default'>Front-end developer <span className='text-primary-default'>|</span></h2>
-                    <p className='my-6 text-lg'>Telecommunications Engineer with a passion for technology.</p>
+                    <p className='my-6 text-lg'>Software & Telecoms Engineer with a passion for technology.</p>
                     <div className='my-6 flex justify-center md:justify-start'>
                         <p className='flex items-center text-lg'>
                             <Link 
