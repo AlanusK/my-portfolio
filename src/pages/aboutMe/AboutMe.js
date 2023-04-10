@@ -62,17 +62,17 @@ export const AboutMe = () => {
                 </div>
             </div>
 
-            {/* <div className='border-t-[1px] py-4 text-white-dark text-center md:text-justify'>
+            <div className='border-t-[1px] py-4 text-white-dark text-center md:text-justify text-lg flex flex-col gap-y-4'>
                 <p>Hi there! Thanks for visiting my portfolio</p>
                 <p>
-                    Hello! I'm Alanus Kajara, a passionate software engineer.
-                    I develop web applications, mobile applications, and desktop applications.
-                    My core skill is based on JavaScript and I love to do most of the things using JavaScript.
-                    I love to make the web more open to the world. I have graduated with a bachelor's degree in
-                    Telecommunications Engineering from University of Dar-es-salaam at Dar-es-salaam, Tanzania in 2012.
-                    I am available for any kind of job opportunity that suits my interests.
+                    I'm <span className='text-primary-default'><a href='https://www.linkedin.com/in/alanus-kajara-peng-t-7a5bb032/'>Alanus Kajara</a></span>, 
+                    a passionate software engineer. I develop web and mobile applications.
+                    My core skill is based on JavaScript and I love to do most of the things using ReactJs for web applications,
+                    and React-native for mobile applications. I am a self-motivated and multi-skilled person who is adept at coming up 
+                    with real solutions that work for clients.
                 </p>
-            </div> */}
+                <p>I am available for any kind of job opportunity that suits my interests.</p>
+            </div>
 
 
         </div>
