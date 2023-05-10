@@ -22,6 +22,7 @@ export const Projects = () => {
                         <ul className='text-white-dark text-base font-thin xs:flex'>
                             <li className='mr-3'>react</li>
                             <li className='mr-3'>typescript</li>
+                            <li className='mr-3'>nodejs</li>
                         </ul>
                     }
                 />
@@ -33,13 +34,20 @@ export const Projects = () => {
                         <ul className='text-white-dark text-base font-thin xs:flex'>
                             <li className='mr-3'>react native</li>
                             <li className='mr-3'>typescript</li>
+                            <li className='mr-3'>nodejs</li>
                         </ul>
                     }
                 />
                 <ProjectCard
                     source={portfolio}
-                    title='Noteworthy technology acquisitions 2021'
-                    description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                    title='Portfolio'
+                    description='A web app that showcase my software developing ability'
+                    skills={
+                        <ul className='text-white-dark text-base font-thin xs:flex'>
+                            <li className='mr-3'>react</li>
+                            <li className='mr-3'>tailwindcss</li>
+                        </ul>
+                    }
                 />
                 <ProjectCard
                     source={streaming}
@@ -54,8 +62,18 @@ export const Projects = () => {
                 />
                 <ProjectCard
                     source={expo}
-                    title='Noteworthy technology acquisitions 2021'
-                    description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+                    title='Woofstagram'
+                    description={
+                        <p>
+                            <p>A mobile app (Instagram for dogs) built with visual and structral components as per design:</p>
+                            <p>[<a href='https://www.figma.com/file/gnZOWBseYYkDmZMR8pVMEf/Woofstagram-Home?node-id=0%3A1'>woofstagram-figma-design</a>]</p>
+                        </p>
+                    }
+                    skills={
+                        <ul className='text-white-dark text-base font-thin xs:flex'>
+                            <li className='mr-3'>Expo</li>
+                        </ul>
+                    }
                 />
                 <ProjectCard
                     source={winefestival}
