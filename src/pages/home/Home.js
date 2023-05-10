@@ -6,8 +6,10 @@ import zmstore from '../../resources/images/zmstore.png';
 import { AiOutlineLink } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { ProjectCard } from '../../components/project-card';
+import { useNavigate} from 'react-router-dom';
 
 export const Home = () => {
+    const navigate = useNavigate();
     return (
         <div className=''>
             <div className='flex justify-center md:justify-between text-center md:text-left'>
@@ -18,8 +20,8 @@ export const Home = () => {
                     <p className='my-6 text-lg'>Software & Telecoms Engineer with a passion for technology.</p>
                     <div className='my-6 flex justify-center md:justify-start'>
                         <p className='flex items-center text-lg'>
-                            <Link 
-                                to='/about-me' 
+                            <Link
+                                to='/about-me'
                                 className='flex items-center text-primary-default hover:text-primary-dark'
                             >
                                 Know more<AiOutlineLink style={{ marginLeft: 5, marginRight: 5 }} />
@@ -37,8 +39,8 @@ export const Home = () => {
                 <p className='text-4xl font-bold text-center md:text-justify'>
                     I help clients to build web and mobile apps for their businesses.
                     <span className='text-lg'>
-                        <Link 
-                            to='/skills' 
+                        <Link
+                            to='/skills'
                             className='text-primary-default block md:inline hover:text-primary-dark'
                         >
                             <AiOutlineLink style={{ marginLeft: 5, marginRight: 5, display: 'inline' }} />View skills.
@@ -50,44 +52,36 @@ export const Home = () => {
             <div className=''>
                 <div className='my-6 flex justify-between items-center'>
                     <h2 className='text-secondary-default'>Recent Projects</h2>
-                    <button className='bg-primary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-dark duration-300' onClick={() => { }}>
+                    <button className='bg-primary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-dark duration-300' onClick={() => navigate('/projects')}>
                         View More
                     </button>
                 </div>
 
-                <div className='md:flex md:flex-wrap md:justify-between'>
-                    <ProjectCard
-                        source={zmstore}
-                        title='Zmstore'
-                        description='Cross-platform mobile selling app'
-                        skills={
-                            <ul className='text-white-dark text-base font-thin xs:flex'>
-                                <li className='mr-3'>react native</li>
-                                <li className='mr-3'>typescript</li>
-                            </ul>
-                        }
-                    />
-
-                    {/* This div is for providing center spacing on medium screens and above*/}
-                    <div className='hidden my-6 md:mt-0 md:flex md:w-6' />
-
-                    <ProjectCard
-                        source={streaming}
-                        title='DEMO Streaming'
-                        description='A web app that shows popular series and movies'
-                        skills={
-                            <ul className='text-white-dark text-base font-thin xs:flex'>
-                                <li className='mr-3'>react</li>
-                                <li className='mr-3'>tailwindcss</li>
-                            </ul>
-                        }
-                    />
-
-                    {/* <ProjectCard
-                        source={image1}
-                        title='Noteworthy technology acquisitions 2021'
-                        description='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-                    /> */}
+                <div>
+                    <div className='md:flex md:gap-5'>
+                        <ProjectCard
+                            source={zmstore}
+                            title='Zmstore'
+                            description='Cross-platform mobile selling app'
+                            skills={
+                                <ul className='text-white-dark text-base font-thin xs:flex'>
+                                    <li className='mr-3'>react native</li>
+                                    <li className='mr-3'>typescript</li>
+                                </ul>
+                            }
+                        />
+                        <ProjectCard
+                            source={streaming}
+                            title='DEMO Streaming'
+                            description='A web app that shows popular series and movies'
+                            skills={
+                                <ul className='text-white-dark text-base font-thin xs:flex'>
+                                    <li className='mr-3'>react</li>
+                                    <li className='mr-3'>tailwindcss</li>
+                                </ul>
+                            }
+                        />
+                    </div>
 
                     <ProjectCard
                         source={clickpesa}
