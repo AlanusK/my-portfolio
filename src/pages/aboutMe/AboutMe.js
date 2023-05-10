@@ -13,7 +13,7 @@ export const AboutMe = () => {
                 <div className='w-1/3 hidden md:block flex-auto'>
                     <img src={profile} width='100%' alt='' />
                 </div>
-                <div className='md:flex-auto md:mt-2 ml-16'>
+                <div className='md:flex-auto md:mt-2'>
                     <div className='md:hidden flex justify-center'>
                         <img src={profile} alt='' />
                     </div>
