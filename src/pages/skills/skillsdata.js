@@ -1,5 +1,5 @@
 const prefix = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/';
-const prefix2 = 'https://github.com/devicons/devicon/blob/master/icons/'
+// const prefix2 = 'https://github.com/devicons/devicon/blob/master/icons/'
 
 const skillsData = [
     {
