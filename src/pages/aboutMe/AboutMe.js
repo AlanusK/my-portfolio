@@ -1,8 +1,7 @@
 import React from 'react';
 import profile from '../../resources/images/profile.png';
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
-import { AiOutlineLink } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import Resume from '../../resources/documents/Alanus-resume.pdf'
+import { FaTwitter, FaGithub, FaDownload } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom';
 
 export const AboutMe = () => {
@@ -23,7 +22,7 @@ export const AboutMe = () => {
                         <p className='text-white-dark text-base font-thin'>Front-end developer, Software & Telecoms Engineer</p>
                     </div>
                     <div className='my-6'>
-                        <h6>Email Me</h6>
+                        <h6>Email Me:</h6>
                         <a href='mailto:akajara@gmail.com'>
                             <span className='bg-secondary-dark rounded-3xl py-1 px-2 hover:bg-secondary-default'>
                                 akajara@gmail.com
@@ -31,17 +30,20 @@ export const AboutMe = () => {
                         </a>
                     </div>
                     <div className='my-6 flex gap-x-1 justify-center md:justify-start'>
-                        <button
-                            className='bg-primary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'
-                            onClick={() => navigate('/projects')}
+                        <a
+                            className='flex items-center justify-center gap-1 bg-primary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'
+                            href={Resume} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
                         >
-                            Projects
-                        </button>
-                        <button 
-                            className='bg-secondary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' 
+                            <FaDownload />
+                            Resume
+                        </a>
+                        <button
+                            className='bg-secondary-default rounded-lg p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'
                             onClick={() => navigate('/contact')}
                         >
-                            Contacts
+                            Contact Me
                         </button>
                     </div>
                     <div className='my-6'>
@@ -65,16 +67,14 @@ export const AboutMe = () => {
             <div className='border-t-[1px] py-4 text-white-dark text-center md:text-justify text-lg flex flex-col gap-y-4'>
                 <p>Hi there! Thanks for visiting my portfolio</p>
                 <p>
-                    I'm <span className='text-primary-default'><a href='https://www.linkedin.com/in/alanus-kajara-peng-t-7a5bb032/'>Alanus Kajara</a></span>, 
+                    I'm <span className='text-primary-default'><a href='https://www.linkedin.com/in/alanus-kajara-peng-t-7a5bb032/'>Alanus Kajara</a></span>,
                     a passionate software engineer. I develop web and mobile applications.
                     My core skill is based on JavaScript and I love to do most of the things using ReactJs for web applications,
-                    and React-native for mobile applications. I am a self-motivated and multi-skilled person who is adept at coming up 
+                    and React-native for mobile applications. I am a self-motivated and multi-skilled person who is adept at coming up
                     with real solutions that work for clients.
                 </p>
                 <p>I am available for any kind of job opportunity that suits my interests.</p>
             </div>
-
-
         </div>
     )
 }
