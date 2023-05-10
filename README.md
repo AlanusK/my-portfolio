@@ -1,2 +1,3 @@
+# My-Portfolio
 
-# My-Portifolio
+A responsive web app that showcase my software developing ability
