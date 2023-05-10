@@ -21,7 +21,7 @@ export const Skills = () => {
 	const OtherSkillCard = (props) => {
 		return (
 			<div className='h-20 min-w-full xs:min-w-fit  xs:w-full mx-12 my-2 flex items-center justify-center p-4 bg-black-darkest text-center rounded-2xl'>
-				<h5 class='mb-2 font-black tracking-tight'>{props.title}</h5>
+				<h5 className='mb-2 font-black tracking-tight'>{props.title}</h5>
 			</div>
 		);
 	};
@@ -31,7 +31,7 @@ export const Skills = () => {
 			<div className='py-4'>
 				<h2 className='my-6 text-secondary-default flex'>Web & mobile skills&nbsp;<span>💻📱</span></h2>
 				<div className='flex flex-wrap items-center justify-center'>
-					{skillsData.map(item => <SkillCard title={item.skillName} imageUrl={item.imageUrl} bg={item.bg} />)}
+					{skillsData.map(item => <SkillCard title={item.skillName} imageUrl={item.imageUrl} bg={item.bg} key={item.skillName} />)}
 				</div>
 			</div>
 			<div className='py-4'>

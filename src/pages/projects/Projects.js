@@ -64,10 +64,10 @@ export const Projects = () => {
                     source={expo}
                     title='Woofstagram'
                     description={
-                        <p>
+                        <div>
                             <p>A mobile app (Instagram for dogs) built with visual and structral components as per design:</p>
                             <p>[<a href='https://www.figma.com/file/gnZOWBseYYkDmZMR8pVMEf/Woofstagram-Home?node-id=0%3A1'>woofstagram-figma-design</a>]</p>
-                        </p>
+                        </div>
                     }
                     skills={
                         <ul className='text-white-dark text-base font-thin xs:flex'>
