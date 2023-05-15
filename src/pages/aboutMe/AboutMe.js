@@ -64,7 +64,7 @@ export const AboutMe = () => {
                 </div>
             </div>
 
-            <div className='border-t-[1px] py-4 text-white-dark text-center md:text-justify text-lg flex flex-col gap-y-4'>
+            <div className='border-t-[1px] py-4 text-white-dark text-center md:text-justify flex flex-col gap-y-4'>
                 <p>Hi there! Thanks for visiting my portfolio</p>
                 <p>
                     I'm <span className='text-primary-default'><a href='https://www.linkedin.com/in/alanus-kajara-peng-t-7a5bb032/'>Alanus Kajara</a></span>,

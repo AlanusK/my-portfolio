@@ -17,9 +17,9 @@ export const Home = () => {
                     <h5 className='my-6' >Hey!</h5>
                     <h1 className='my-6'>I'm <span className='text-primary-default'>Alanus Kajara</span></h1>
                     <h2 className='my-6 text-secondary-default'>Front-end developer <span className='text-primary-default'>|</span></h2>
-                    <p className='my-6 text-lg'>Software & Telecoms Engineer with a passion for technology.</p>
+                    <p className='my-6'>Software & Telecoms Engineer with a passion for technology.</p>
                     <div className='my-6 flex justify-center md:justify-start'>
-                        <p className='flex items-center text-lg'>
+                        <p className='flex items-center'>
                             <Link
                                 to='/about-me'
                                 className='flex items-center text-primary-default hover:text-primary-dark'
@@ -36,9 +36,9 @@ export const Home = () => {
             </div>
 
             <div>
-                <p className='text-4xl font-bold text-center md:text-justify'>
+                <p className='text-3xl text-center md:text-justify'>
                     I help clients to build web and mobile apps for their businesses.
-                    <span className='text-lg'>
+                    <span className='text-base'>
                         <Link
                             to='/skills'
                             className='text-primary-default block md:inline hover:text-primary-dark'

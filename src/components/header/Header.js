@@ -33,7 +33,7 @@ export const Header = () => {
             </div>
 
             <nav className='w-96 hidden md:inline'>
-                <ul className='flex items-center justify-between font-bold text-xl'>
+                <ul className='flex items-center justify-between font-bold'>
                     <NavList />
                 </ul>
             </nav>

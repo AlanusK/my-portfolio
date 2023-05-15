@@ -2,13 +2,13 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-3xl;
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-2xl;
   }
   h5 {
-    @apply text-xl;
+    @apply text-lg;
   }
 }
 
@@ -25,6 +25,6 @@ body {
   max-width: 900px;
   padding: 0 3rem;
   background-color: #1c1c1c;
-  font-size: 20;
-  font-family: 'Times New Roman', Times, serif
+  font-size: 28;
+  font-family: 'Poppins', sans-serif;
 }
