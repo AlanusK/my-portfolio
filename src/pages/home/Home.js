@@ -62,6 +62,7 @@ export const Home = () => {
                         <ProjectCard
                             source={zmstore}
                             title='Zmstore'
+                            href='https://github.com/zeromoja/zmstore'
                             description='Cross-platform mobile selling app'
                             skills={
                                 <ul className='text-white-dark text-base font-thin xs:flex'>
@@ -73,6 +74,7 @@ export const Home = () => {
                         <ProjectCard
                             source={streaming}
                             title='DEMO Streaming'
+                            href='https://github.com/AlanusK/demo-streaming'
                             description='A web app that shows popular series and movies'
                             skills={
                                 <ul className='text-white-dark text-base font-thin xs:flex'>
@@ -86,6 +88,7 @@ export const Home = () => {
                     <ProjectCard
                         source={clickpesa}
                         title='Sender Dashboard'
+                        href='https://github.com/AlanusK/sender-app/commits/develop'
                         description='E-commerce platform focus on simplifying business payments'
                         skills={
                             <ul className='text-white-dark text-base font-thin xs:flex'>
