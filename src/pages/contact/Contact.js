@@ -29,7 +29,7 @@ export const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col grow bg-secondary-dark -mx-12 px-12 py-6 md:flex-row'>
+        <div className='w-full flex flex-col grow bg-secondary-dark -mx-12 px-12 py-6 md:flex-row'>
             <div className='md:w-1/2 md:pr-4'>
                 <h5>Have an interesting project? </h5>
                 <h5>I would love to hear about it.</h5>
