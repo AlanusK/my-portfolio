@@ -30,7 +30,8 @@ export const Projects = () => {
                 <ProjectCard
                     source={zmstore}
                     title='Zmstore'
-                    href='https://github.com/zeromoja/zmstore'
+                    // href='https://github.com/zeromoja/zmstore'
+                    toolTip='zmstore'
                     description='Cross-platform mobile selling app'
                     skills={
                         <ul className='text-white-dark text-base font-thin xs:flex'>
