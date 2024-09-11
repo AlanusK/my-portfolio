@@ -1,4 +1,5 @@
 import React from 'react';
+import promptopia from '../../resources/images/promptopia.png';
 import clickpesa from '../../resources/images/clickpesa.png';
 import streaming from '../../resources/images/streaming.png';
 import zmstore from '../../resources/images/zmstore.png';
@@ -14,6 +15,23 @@ export const Projects = () => {
                 <h1>Projects</h1>
             </div>
             <div>
+                <ProjectCard
+                    source={promptopia}
+                    title='Promptopia'
+                    href='https://project-promptopia-kxyl387rt-alanus-projects.vercel.app'
+                    toolTip='View Live'
+                    description='An open-source AI prompting tool for modern world to discover, create, and share creative prompts'
+                    skills={
+                        <ul className='text-white-dark text-base font-thin xs:flex'>
+                            <li className='mr-3'>nextjs</li>
+                            <li className='mr-3'>typescript</li>
+                            <li className='mr-3'>mongodb</li>
+                            <li className='mr-3'>mongoose</li>
+                            <li className='mr-3'>nextauth</li>
+                            <li className='mr-3'>tailwindcss</li>
+                        </ul>
+                    }
+                />
                 <ProjectCard
                     source={clickpesa}
                     title='Sender Dashboard'
