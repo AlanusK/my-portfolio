@@ -7,8 +7,20 @@ const skillsData = [
         imageUrl: prefix + 'react/react-original.svg'
     },
     {
+        skillName: 'NEXT JS',
+        imageUrl: prefix + 'nextjs/nextjs-original.svg'
+    },
+    {
+        skillName: 'MONGODB',
+        imageUrl: prefix + 'mongodb/mongodb-original.svg'
+    },
+    {
         skillName: 'REACT NATIVE',
         imageUrl: prefix + 'react/react-original.svg'
+    },
+    {
+        skillName: 'NODE JS',
+        imageUrl: prefix + 'nodejs/nodejs-original.svg'
     },
     {
         skillName: 'JAVASCRIPT',
@@ -35,10 +47,6 @@ const skillsData = [
         imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg'
     },
     {
-        skillName: 'NODE JS',
-        imageUrl: prefix + 'nodejs/nodejs-original.svg'
-    },
-    {
         skillName: 'FASTIFY',
         imageUrl: 'https://avatars.githubusercontent.com/u/24939410?s=280&v=4',
     },
@@ -54,6 +62,10 @@ const skillsData = [
         skillName: 'GITHUB',
         imageUrl: prefix + 'github/github-original.svg',
         bg: '#fff'
+    },
+    {
+        skillName: 'MOONGOSE',
+        imageUrl: prefix + 'mongoose/mongoose-original.svg'
     },
     {
         skillName: 'MYSQL',
